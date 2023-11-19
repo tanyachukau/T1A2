@@ -12,8 +12,10 @@ header {
   padding: 16px;
   text-align: center;
 }
-header .logo-name {
-  margin-bottom: 48px;
+@media screen and (max-width: 600px) {
+  header .logo-name {
+    margin-bottom: 48px;
+  }
 }
 header .logo-name img {
   width: 100px;
@@ -37,6 +39,19 @@ header #nav-items a {
   color: black;
 }
 
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-name .name {
+    margin-bottom: 0;
+  }
+  header #nav-items {
+    width: 50%;
+  }
+}
 footer {
   background-color: #FFFFFF;
   padding: 16px;
@@ -53,4 +68,12 @@ footer .social-media a i {
 }
 footer .social-media .info {
   color: black;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=index.css.map */
